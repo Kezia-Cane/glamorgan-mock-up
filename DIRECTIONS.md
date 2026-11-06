@@ -36,4 +36,6 @@ Direction A also has home-only scroll choreography: sections and repeated servic
 
 On entry, Direction A now opens with a navy-to-teal logo curtain that lifts upward. The hero copy, crew image, and location card animate in only after the curtain completes; reduced-motion users receive the page immediately without the intro lock.
 
+The curtain handoff now also stages the utility bar and navbar, then reveals the hero title, paragraph, actions, image, proof line, and location card with a coordinated stagger.
+
 Current contractor sites such as [Peterman Brothers](https://petermanhvac.com/location/lexington/) and [One Hour Heating & Air Conditioning](https://www.onehourheatandair.com/) place service categories, location relevance, and call or booking actions near the top. These are conversion patterns only; the three designs retain Glamorgan's own content, photography, and visual identity.

@@ -138,3 +138,20 @@
 @keyframes hero-photo-in{from{opacity:0;transform:translateY(28px) scale(.97)}to{opacity:1;transform:none}}
 @keyframes hero-area-in{from{opacity:0;transform:translateY(18px) scale(.98)}to{opacity:1;transform:none}}
 @media(prefers-reduced-motion:reduce){.intro-lock{overflow:auto}.intro-curtain{display:none}.direction-a.intro-pending .concept-a-copy,.direction-a.intro-pending .concept-a-photo,.direction-a.intro-pending .concept-area{opacity:1;transform:none}.direction-a.intro-complete .concept-a-copy,.direction-a.intro-complete .concept-a-photo,.direction-a.intro-complete .concept-area{animation:none}}
+
+/* Coordinated curtain handoff: navigation and every hero beat enter together. */
+.direction-a.intro-pending .gh-utility,.direction-a.intro-pending .gh-header{opacity:0;transform:translateY(-16px)}
+.direction-a.intro-complete .gh-utility{animation:nav-drop-in .55s .08s both cubic-bezier(.22,.61,.36,1)}
+.direction-a.intro-complete .gh-header{animation:nav-drop-in .7s .16s both cubic-bezier(.22,.61,.36,1)}
+.direction-a.intro-pending .concept-a-copy{opacity:1;transform:none}
+.direction-a.intro-pending .concept-a-copy h1,.direction-a.intro-pending .concept-a-copy>p,.direction-a.intro-pending .concept-actions,.direction-a.intro-pending .concept-proof{opacity:0;transform:translateY(22px)}
+.direction-a.intro-pending .concept-a-photo,.direction-a.intro-pending .concept-area{opacity:0;transform:translateY(24px) scale(.985)}
+.direction-a.intro-complete .concept-a-copy h1{animation:hero-item-in .72s .22s both cubic-bezier(.22,.61,.36,1)}
+.direction-a.intro-complete .concept-a-copy>p{animation:hero-item-in .68s .34s both cubic-bezier(.22,.61,.36,1)}
+.direction-a.intro-complete .concept-actions{animation:hero-item-in .65s .45s both cubic-bezier(.22,.61,.36,1)}
+.direction-a.intro-complete .concept-proof{animation:hero-item-in .62s .56s both cubic-bezier(.22,.61,.36,1)}
+.direction-a.intro-complete .concept-a-photo{animation:hero-photo-in .9s .28s both cubic-bezier(.22,.61,.36,1)}
+.direction-a.intro-complete .concept-area{animation:hero-area-in .7s .62s both cubic-bezier(.22,.61,.36,1)}
+@keyframes nav-drop-in{from{opacity:0;transform:translateY(-16px)}to{opacity:1;transform:none}}
+@keyframes hero-item-in{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.direction-a.intro-pending .gh-utility,.direction-a.intro-pending .gh-header,.direction-a.intro-pending .concept-a-copy h1,.direction-a.intro-pending .concept-a-copy>p,.direction-a.intro-pending .concept-actions,.direction-a.intro-pending .concept-proof,.direction-a.intro-pending .concept-a-photo,.direction-a.intro-pending .concept-area{opacity:1;transform:none}.direction-a.intro-complete .gh-utility,.direction-a.intro-complete .gh-header,.direction-a.intro-complete .concept-a-copy h1,.direction-a.intro-complete .concept-a-copy>p,.direction-a.intro-complete .concept-actions,.direction-a.intro-complete .concept-proof,.direction-a.intro-complete .concept-a-photo,.direction-a.intro-complete .concept-area{animation:none}}

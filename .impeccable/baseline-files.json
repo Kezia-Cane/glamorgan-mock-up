@@ -1,0 +1,12 @@
+[
+  {
+    "antipattern": "side-tab",
+    "name": "Side-tab accent border",
+    "description": "Thick colored border on one side of a card — the most recognizable tell of AI-generated UIs. Use a subtler accent or remove it entirely.",
+    "severity": "warning",
+    "category": "slop",
+    "file": "C:\\Users\\KC\\Documents\\Codex\\projects\\Claude to wordpress\\clients\\glamorgan-hvac\\static-clone\\styles.css",
+    "line": 3,
+    "snippet": "border-left:5px solid var(--gold)"
+  }
+]

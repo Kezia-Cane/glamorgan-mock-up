@@ -1,0 +1,313 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-05T01:06:09.109Z",
+  "title": "Design System: Glamorgan Heating & Cooling Homepage",
+  "extensions": {
+    "colorMeta": {
+      "harbor-navy": {
+        "role": "primary",
+        "displayName": "Harbor Navy",
+        "canonical": "#092b4c",
+        "tonalRamp": [
+          "#020911",
+          "#04111e",
+          "#061b2f",
+          "#082440",
+          "#092b4c",
+          "#445e77",
+          "#8999a9",
+          "#c9d0d8"
+        ]
+      },
+      "deep-navy": {
+        "role": "primary",
+        "displayName": "Deep Navy",
+        "canonical": "#061d32",
+        "tonalRamp": [
+          "#01060b",
+          "#020c14",
+          "#04121f",
+          "#05182a",
+          "#061d32",
+          "#425363",
+          "#87939d",
+          "#c8cdd2"
+        ]
+      },
+      "sea-teal": {
+        "role": "secondary",
+        "displayName": "Sea Teal",
+        "canonical": "#236d72",
+        "tonalRamp": [
+          "#081819",
+          "#0e2c2e",
+          "#164447",
+          "#1d5c60",
+          "#236d72",
+          "#589094",
+          "#95b9bb",
+          "#cfdfe0"
+        ]
+      },
+      "antique-gold": {
+        "role": "tertiary",
+        "displayName": "Antique Gold",
+        "canonical": "#e5b84f",
+        "tonalRamp": [
+          "#322811",
+          "#5c4a20",
+          "#8e7231",
+          "#c09b42",
+          "#e5b84f",
+          "#ebc979",
+          "#f3ddab",
+          "#f9efd8"
+        ]
+      },
+      "signal-red": {
+        "role": "tertiary",
+        "displayName": "Signal Red",
+        "canonical": "#c93635",
+        "tonalRamp": [
+          "#2c0c0c",
+          "#501615",
+          "#7d2121",
+          "#a92d2d",
+          "#c93635",
+          "#d66665",
+          "#e59f9e",
+          "#f3d3d3"
+        ]
+      },
+      "warm-ivory": {
+        "role": "neutral",
+        "displayName": "Warm Ivory",
+        "canonical": "#fff8e8",
+        "tonalRamp": [
+          "#383733",
+          "#66635d",
+          "#9e9a90",
+          "#d6d0c3",
+          "#fff8e8",
+          "#fffaee",
+          "#fffcf4",
+          "#fffdfa"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "#383838",
+          "#666666",
+          "#9e9e9e",
+          "#d6d6d6",
+          "#ffffff",
+          "#ffffff",
+          "#ffffff",
+          "#ffffff"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#153348",
+        "tonalRamp": [
+          "#050b10",
+          "#08141d",
+          "#0d202d",
+          "#122b3c",
+          "#153348",
+          "#4d6474",
+          "#8f9da7",
+          "#ccd2d7"
+        ]
+      },
+      "body": {
+        "role": "neutral",
+        "displayName": "Body",
+        "canonical": "#425565",
+        "tonalRamp": [
+          "#0f1316",
+          "#1a2228",
+          "#29353f",
+          "#374755",
+          "#425565",
+          "#6f7e8a",
+          "#a4adb5",
+          "#d5dadd"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Line",
+        "canonical": "#cbd7d9",
+        "tonalRamp": [
+          "#2d2f30",
+          "#515657",
+          "#7e8587",
+          "#abb5b6",
+          "#cbd7d9",
+          "#d7e1e2",
+          "#e6eced",
+          "#f4f6f7"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Service and step titles."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Reading copy."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Buttons and short UI labels."
+      }
+    },
+    "shadows": [
+      {
+        "name": "more-dropdown",
+        "value": "0 14px 22px #0004",
+        "purpose": "Separate the desktop More menu from the header."
+      },
+      {
+        "name": "mobile-actions",
+        "value": "0 -8px 22px #0002",
+        "purpose": "Lift the fixed phone action bar slightly above page content."
+      }
+    ],
+    "motion": [
+      {
+        "name": "control-transition",
+        "value": "0.2s",
+        "purpose": "Button, icon, and link hover changes."
+      },
+      {
+        "name": "drawer-transition",
+        "value": "0.28s cubic-bezier(.2,.8,.2,1)",
+        "purpose": "Mobile drawer entrance and exit."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide-header",
+        "value": "1280px"
+      },
+      {
+        "name": "mobile-navigation",
+        "value": "1050px"
+      },
+      {
+        "name": "hero-copy-stack",
+        "value": "1050px"
+      },
+      {
+        "name": "phone",
+        "value": "600px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Request Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The main service request action.",
+      "html": "<a class=\"ds-button-primary\" href=\"#\">Request Service →</a>",
+      "css": ".ds-button-primary{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:13px 22px;background:#e5b84f;color:#102c3d;border:1px solid transparent;border-radius:2px;text-decoration:none;font:700 .91rem/1.2 \"DM Sans\",Arial,sans-serif;transition:background .2s,transform .2s}.ds-button-primary:hover{background:#f3ce75;transform:translateY(-2px)}.ds-button-primary:focus-visible{outline:3px solid #e5b84f;outline-offset:4px}"
+    },
+    {
+      "name": "Outlined Call Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "A direct call action on light backgrounds.",
+      "html": "<a class=\"ds-button-outline\" href=\"#\">Call (518) 723-0392</a>",
+      "css": ".ds-button-outline{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:13px 22px;background:transparent;color:#092b4c;border:1px solid #5c7889;border-radius:2px;text-decoration:none;font:700 .91rem/1.2 \"DM Sans\",Arial,sans-serif;transition:background .2s,transform .2s}.ds-button-outline:hover{background:#fff;transform:translateY(-2px)}.ds-button-outline:focus-visible{outline:3px solid #e5b84f;outline-offset:4px}"
+    },
+    {
+      "name": "Text Link",
+      "kind": "button",
+      "description": "Secondary route for deeper service detail.",
+      "html": "<a class=\"ds-text-link\" href=\"#\">Explore services →</a>",
+      "css": ".ds-text-link{display:inline-flex;gap:11px;color:#176167;border-bottom:1px solid currentColor;padding-bottom:4px;text-decoration:none;font:700 .93rem/1.3 \"DM Sans\",Arial,sans-serif;transition:color .2s}.ds-text-link:hover{color:#092b4c}.ds-text-link:focus-visible{outline:3px solid #e5b84f;outline-offset:4px}"
+    },
+    {
+      "name": "Header Navigation",
+      "kind": "nav",
+      "description": "Dark header with concise service routes.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Primary navigation\"><a href=\"#\">Air Conditioning</a><a href=\"#\">Heating</a><a href=\"#\">Plumbing</a><a href=\"#\">More</a></nav>",
+      "css": ".ds-nav{display:flex;gap:20px;align-items:center;background:#000;padding:20px}.ds-nav a{color:#f8f8f4;text-decoration:none;font:600 .83rem/1.3 \"DM Sans\",Arial,sans-serif}.ds-nav a:hover{color:#e5b84f}.ds-nav a:focus-visible{outline:3px solid #e5b84f;outline-offset:4px}"
+    },
+    {
+      "name": "Service Row",
+      "kind": "custom",
+      "description": "Divided service route with title, explanation, and arrow.",
+      "html": "<a class=\"ds-service-row\" href=\"#\"><span class=\"ds-service-icon\" aria-hidden=\"true\">◌</span><span><strong>Air Conditioning</strong><small>Repairs, installation, and maintenance for dependable home cooling.</small></span><span aria-hidden=\"true\">→</span></a>",
+      "css": ".ds-service-row{display:grid;grid-template-columns:38px 1fr 20px;gap:14px;align-items:start;padding:23px 0;border-top:1px solid #cbd7d9;border-bottom:1px solid #cbd7d9;color:#153348;text-decoration:none;font-family:\"DM Sans\",Arial,sans-serif}.ds-service-row strong{display:block;font-size:1.01rem;line-height:1.3}.ds-service-row small{display:block;margin-top:5px;color:#425565;font-size:.86rem;line-height:1.5}.ds-service-icon,.ds-service-row>span:last-child{color:#236d72}.ds-service-row:hover strong{color:#236d72}.ds-service-row:focus-visible{outline:3px solid #e5b84f;outline-offset:4px}"
+    },
+    {
+      "name": "Review Panel",
+      "kind": "card",
+      "description": "One customer quotation with a restrained gold rule.",
+      "html": "<figure class=\"ds-review\"><blockquote>“Professional, knowledgeable, and friendly.”</blockquote><figcaption>Jo-Ann J.</figcaption></figure>",
+      "css": ".ds-review{margin:0;padding:34px 0 0;border-top:2px solid #e5b84f;background:#fff}.ds-review blockquote{margin:0;color:#092b4c;font:400 1.6rem/1.5 \"Libre Baskerville\",Georgia,serif}.ds-review figcaption{margin-top:22px;color:#236d72;font:700 .9rem/1.3 \"DM Sans\",Arial,sans-serif}"
+    },
+    {
+      "name": "Service Area List",
+      "kind": "custom",
+      "description": "Ruled local-community names beside the map.",
+      "html": "<ul class=\"ds-area-list\"><li>Mechanicville</li><li>Clifton Park</li><li>Saratoga</li><li>Troy</li></ul>",
+      "css": ".ds-area-list{display:grid;grid-template-columns:repeat(2,1fr);gap:8px 22px;list-style:none;padding:0;margin:0;background:#fff8e8;color:#153348;font:600 .91rem/1.5 \"DM Sans\",Arial,sans-serif}.ds-area-list li{padding:5px 0;border-bottom:1px solid #c9c5b8}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Local Service Editorial",
+    "overview": "The current homepage pairs clear, service-led information with commercial photographs of Glamorgan's technicians. The official sailboat logo sits on an intentional black field. White and ivory space, fine rules, and legible type give the page a calm, capable character.\n\nThis is the homepage's implemented design system. The other eleven static pages have not been rebuilt into it; future WordPress work should use this as the visual reference only after the homepage direction is approved.",
+    "keyCharacteristics": [
+      "A four-person team image leads; supporting photographs show real home-service work.",
+      "Editorial serif headings and direct sans-serif service copy establish hierarchy.",
+      "Broad sections and thin dividers organize information without repetitive card tiles.",
+      "The request action is gold; urgent mobile service access uses red."
+    ],
+    "rules": [
+      {
+        "name": "The Reserved Accent Rule",
+        "body": "Keep gold concentrated on the primary action and small points of emphasis; reserve red for urgent service access.",
+        "section": "colors"
+      },
+      {
+        "name": "The Plain Service Rule",
+        "body": "State the service first, then explain it in short, ordinary language.",
+        "section": "typography"
+      },
+      {
+        "name": "The People First Rule",
+        "body": "Show the entire group portrait without cropping at the supported desktop, tablet, and mobile widths.",
+        "section": "layout"
+      }
+    ],
+    "dos": [
+      "Do use the official logo against a black header or footer field.",
+      "Do show permanent technician, equipment, and local-home imagery.",
+      "Do keep service and contact actions clear at every supported width."
+    ],
+    "donts": [
+      "Don't introduce seasonal or temporary campaign artwork or copy.",
+      "Don't turn service links into a grid of raised, repetitive cards.",
+      "Don't use Signal Red as a general decorative accent."
+    ]
+  }
+}

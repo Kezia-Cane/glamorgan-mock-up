@@ -1,0 +1,27 @@
+import {renderHome} from './home.js';
+
+const root='/assets/images/';
+const call='<a class="gh-button gh-button-outline" href="tel:5187230392">Call (518) 723-0392</a>';
+const request='<a class="gh-button gh-button-gold" href="/contact-us/">Request Service <span aria-hidden="true">→</span></a>';
+const switcher=active=>`<nav class="direction-picker" aria-label="Homepage design directions"><span>Homepage concepts</span>${[['a','Harbor Editorial'],['b','Coastal Service Motion'],['c','Crafted Local Trust']].map(([id,name])=>`<a href="/direction-${id}/" ${id===active?'aria-current="page"':''}><b>${id.toUpperCase()}</b><span>${name}</span></a>`).join('')}</nav>`;
+
+const hero={
+ a:`<section class="gh-hero concept-hero concept-hero-a" aria-labelledby="gh-hero-title"><div class="gh-container concept-a-grid"><div class="concept-a-copy"><h1 id="gh-hero-title">The <em>local crew</em> behind your comfort.</h1><p>Heating, cooling and plumbing help from a local crew that knows the homes and communities it serves.</p><div class="concept-actions">${request}${call}</div><div class="concept-proof">24/7 service availability <span>·</span> Heating, cooling &amp; plumbing</div></div><figure class="concept-a-photo"><img src="${root}glamorgan-hero-crew-home.png" width="1536" height="1024" alt="Four Glamorgan technicians together outside a local home"><figcaption>Real people. Reliable work.</figcaption></figure><aside class="concept-area"><strong>Close to home, across the Capital Region.</strong><span>Based in Mechanicville. Serving nearby New York communities.</span><a href="/service-areas/">Explore service areas <span aria-hidden="true">↗</span></a></aside></div></section>`,
+ b:`<section class="gh-hero concept-hero concept-hero-b" aria-labelledby="gh-hero-title"><div class="concept-b-media"><img src="${root}glamorgan-team-studio.png" width="1672" height="941" alt="Four Glamorgan technicians together in their branded uniforms"></div><div class="gh-container concept-b-content"><div class="concept-b-copy"><h1 id="gh-hero-title">Home comfort has a local crew.</h1><p>Heating, cooling and plumbing for Mechanicville and the Capital Region. Real people, ready to help around the clock.</p><div class="concept-actions">${request}${call}</div></div><div class="concept-b-selector" aria-label="Explore services"><span>What can we help with?</span><a href="/heating-services/">Heating ↗</a><a href="/ac-services/">Cooling ↗</a><a href="/plumbing-services/">Plumbing ↗</a><a href="/indoor-air-quality-services-in-clifton-park/">Air Quality ↗</a></div></div></section>`,
+ c:`<section class="gh-hero concept-hero concept-hero-c" aria-labelledby="gh-hero-title"><div class="gh-container concept-c-grid"><div class="concept-c-copy"><h1 id="gh-hero-title">Good service starts with listening.</h1><p>From Mechanicville to homes across the Capital Region, our crew helps with heating, cooling and plumbing, and talks you through the work.</p><div class="concept-actions">${request}${call}</div><div class="concept-c-trust"><strong>Local help, available 24/7</strong><span>Read what our neighbors say about Glamorgan.</span><a href="/reviews/">Customer reviews ↗</a></div></div><figure class="concept-c-photo"><img src="${root}glamorgan-home-consultation-v2.png" width="1536" height="1024" alt="Glamorgan technician discussing an HVAC system with a homeowner on a tablet"><figcaption>Care begins with a conversation.</figcaption></figure></div></section>`
+};
+
+export function renderDirection(direction,data,services,icon,esc){
+ const serviceAreas=['Clifton Park','Niskayuna','Amsterdam','Saratoga','Glens Falls','Halfmoon','Troy','Wilton','Waterford','Albany','Scotia','Watervliet','Schenectady','Malta','Rexford','Ballston Spa','Round Lake','Latham','Burnt Hills','Rensselaer','Colonie','Mechanicville','Rotterdam','Glenville','East Greenbush'];
+ const areaList=serviceAreas.map(name=>`<li>${name}</li>`).join('');
+ const original=renderHome(data,services,icon,esc).replaceAll('glamorgan-sailboat-logo.jpeg','glamorgan-sailboat-logo-transparent.png').replace(/(<section class="gh-areas[\s\S]*?<ul>)[\s\S]*?(<\/ul>)/,`$1${areaList}$2`);
+ const firstEnd=original.indexOf('</section>')+10;
+ const consultation=`<section class="concept-consult gh-section" aria-labelledby="concept-consult-title"><div class="gh-container concept-consult-grid"><div><h2 id="concept-consult-title">A clear conversation before the work begins.</h2><p>We listen, look at the system, and explain the options for your home.</p><a class="gh-text-link" href="/contact-us/">Talk to our team →</a></div><img src="${root}glamorgan-home-consultation-v2.png" width="1536" height="1024" alt="Technician discussing an HVAC system with a homeowner on a tablet"></div></section>`;
+ const team=`<section class="gh-team-feature" aria-labelledby="gh-team-title"><figure><img src="${root}glamorgan-team-studio.png" width="1672" height="941" alt="Four Glamorgan technicians together in their navy and yellow uniforms"></figure><div class="gh-team-feature-copy"><h2 id="gh-team-title">A crew you can put a face to.</h2><p>Local people helping local homes with heating, cooling and plumbing.</p><a href="/contact-us/">Get in touch <span aria-hidden="true">↗</span></a></div></section>`;
+ let body=original.slice(firstEnd).replace('<section class="gh-final"',consultation+'<section class="gh-final"');
+ if(direction==='a')body=body.replace('<section class="gh-reviews ',team+'<section class="gh-reviews ');
+ return '<main id="main" class="gh-main">'+hero[direction]+body;
+}
+
+
+

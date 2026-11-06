@@ -1,0 +1,182 @@
+[
+  {
+    "antipattern": "low-contrast",
+    "name": "Low contrast text",
+    "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+    "severity": "warning",
+    "category": "quality",
+    "file": "http://127.0.0.1:4173/",
+    "line": 0,
+    "snippet": "4.0:1 (need 4.5:1) — text #ffffff on #318c91",
+    "selector": "a.nav-contact"
+  },
+  {
+    "antipattern": "hero-eyebrow-chip",
+    "name": "Hero eyebrow / pill chip",
+    "description": "A tiny uppercase letter-spaced label sitting immediately above an oversized hero headline — or the same shape rendered as a pill chip — is now the default AI SaaS hero. Drop the eyebrow, integrate the kicker into the headline, or run it as a navigation breadcrumb instead.",
+    "severity": "warning",
+    "category": "slop",
+    "file": "http://127.0.0.1:4173/",
+    "line": 0,
+    "snippet": "eyebrow chip (tracked-caps) \"Glamorgan Heating & Cooling\" above h1 \"Comfort for your home. Care from your neighbors.\"",
+    "selector": "p.eyebrow"
+  },
+  {
+    "antipattern": "low-contrast",
+    "name": "Low contrast text",
+    "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+    "severity": "warning",
+    "category": "quality",
+    "file": "http://127.0.0.1:4173/",
+    "line": 0,
+    "snippet": "3.8:1 (need 4.5:1) — text #318c91 on #fff8e8",
+    "selector": "section.section.services-section > div.shell > div.section-heading > span.eyebrow"
+  },
+  {
+    "antipattern": "kicker-above-heading",
+    "name": "Kicker / eyebrow label above heading",
+    "description": "A tiny tracked uppercase or small-caps label sitting as its own block directly above a heading is banned outright, repeated or not. Generated kickers never earn their place: the heading carries its own weight. Delete the label and let the heading speak; if the words matter, work them into the heading or the body.",
+    "severity": "warning",
+    "category": "slop",
+    "file": "http://127.0.0.1:4173/",
+    "line": 0,
+    "snippet": "kicker \"What we do\" above h2 \"One trusted team for your home\"",
+    "selector": "section.section.services-section > div.shell > div.section-heading > span.eyebrow"
+  },
+  {
+    "antipattern": "low-contrast",
+    "name": "Low contrast text",
+    "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+    "severity": "warning",
+    "category": "quality",
+    "file": "http://127.0.0.1:4173/",
+    "line": 0,
+    "snippet": "4.0:1 (need 4.5:1) — text #318c91 on #ffffff",
+    "selector": "a.service-card:nth-of-type(1) > span.text-link"
+  },
+  {
+    "antipattern": "straggler",
+    "name": "Straggler",
+    "description": "The last line of this paragraph holds one word, which leaves a hole under the block. Set text-wrap: pretty on body copy (Chrome, Safari) to pull a word down beside it. Where a browser ignores it, edit the last sentence or bind the last two words with a no-break space. Keep it if the break is intended.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "http://127.0.0.1:4173/",
+    "line": 0,
+    "snippet": "\"heaters.\" alone on the last of 2 lines (19% of the measure)",
+    "advisory": true,
+    "selector": "a.service-card:nth-of-type(5) > p"
+  },
+  {
+    "antipattern": "unbalanced-heading",
+    "name": "Unbalanced heading",
+    "description": "This heading wraps with its last line far shorter than the line above, often one word alone. Set text-wrap: balance on headings so the lines come out near even, or rewrite it to fit. Keep it if the break carries weight on purpose.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "http://127.0.0.1:4173/",
+    "line": 0,
+    "snippet": "last of 3 lines is 26% as wide as the line above",
+    "advisory": true,
+    "selector": "div.shell.story-grid > div > h2"
+  },
+  {
+    "antipattern": "straggler",
+    "name": "Straggler",
+    "description": "The last line of this paragraph holds one word, which leaves a hole under the block. Set text-wrap: pretty on body copy (Chrome, Safari) to pull a word down beside it. Where a browser ignores it, edit the last sentence or bind the last two words with a no-break space. Keep it if the break is intended.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "http://127.0.0.1:4173/",
+    "line": 0,
+    "snippet": "\"home.\" alone on the last of 2 lines (8% of the measure)",
+    "advisory": true,
+    "selector": "div.shell.story-grid > div > p:nth-of-type(2)"
+  },
+  {
+    "antipattern": "low-contrast",
+    "name": "Low contrast text",
+    "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+    "severity": "warning",
+    "category": "quality",
+    "file": "http://127.0.0.1:4173/",
+    "line": 0,
+    "snippet": "3.7:1 (need 4.5:1) — text #318c91 on #f2f7f7",
+    "selector": "section.section.review-section > div.shell > div.section-heading > span.eyebrow"
+  },
+  {
+    "antipattern": "kicker-above-heading",
+    "name": "Kicker / eyebrow label above heading",
+    "description": "A tiny tracked uppercase or small-caps label sitting as its own block directly above a heading is banned outright, repeated or not. Generated kickers never earn their place: the heading carries its own weight. Delete the label and let the heading speak; if the words matter, work them into the heading or the body.",
+    "severity": "warning",
+    "category": "slop",
+    "file": "http://127.0.0.1:4173/",
+    "line": 0,
+    "snippet": "kicker \"Customer voices\" above h2 \"Neighbors say it best\"",
+    "selector": "section.section.review-section > div.shell > div.section-heading > span.eyebrow"
+  },
+  {
+    "antipattern": "unbalanced-heading",
+    "name": "Unbalanced heading",
+    "description": "This heading wraps with its last line far shorter than the line above, often one word alone. Set text-wrap: balance on headings so the lines come out near even, or rewrite it to fit. Keep it if the break carries weight on purpose.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "http://127.0.0.1:4173/",
+    "line": 0,
+    "snippet": "last of 2 lines is 34% as wide as the line above",
+    "advisory": true,
+    "selector": "div.shell.area-layout > div > h2"
+  },
+  {
+    "antipattern": "low-contrast",
+    "name": "Low contrast text",
+    "description": "Text does not meet WCAG AA contrast requirements (4.5:1 for body, 3:1 for large text). Increase the contrast between text and background.",
+    "severity": "warning",
+    "category": "quality",
+    "file": "http://127.0.0.1:4173/",
+    "line": 0,
+    "snippet": "3.5:1 (need 4.5:1) — text #e0f4ef on #318c91",
+    "selector": "section.closing-cta > div.shell > div > span.eyebrow"
+  },
+  {
+    "antipattern": "kicker-above-heading",
+    "name": "Kicker / eyebrow label above heading",
+    "description": "A tiny tracked uppercase or small-caps label sitting as its own block directly above a heading is banned outright, repeated or not. Generated kickers never earn their place: the heading carries its own weight. Delete the label and let the heading speak; if the words matter, work them into the heading or the body.",
+    "severity": "warning",
+    "category": "slop",
+    "file": "http://127.0.0.1:4173/",
+    "line": 0,
+    "snippet": "kicker \"Here when you need us\" above h2 \"Let's make your home comfortable.\"",
+    "selector": "section.closing-cta > div.shell > div > span.eyebrow"
+  },
+  {
+    "antipattern": "kicker-above-heading",
+    "name": "Kicker / eyebrow label above heading",
+    "description": "A tiny tracked uppercase or small-caps label sitting as its own block directly above a heading is banned outright, repeated or not. Generated kickers never earn their place: the heading carries its own weight. Delete the label and let the heading speak; if the words matter, work them into the heading or the body.",
+    "severity": "warning",
+    "category": "slop",
+    "file": "http://127.0.0.1:4173/",
+    "line": 0,
+    "snippet": "kicker \"About Glamorgan\" above h2 \"Sailing into comfort with a local crew you can trust.\"",
+    "selector": "div.shell.story-grid > div > span.eyebrow"
+  },
+  {
+    "antipattern": "kicker-above-heading",
+    "name": "Kicker / eyebrow label above heading",
+    "description": "A tiny tracked uppercase or small-caps label sitting as its own block directly above a heading is banned outright, repeated or not. Generated kickers never earn their place: the heading carries its own weight. Delete the label and let the heading speak; if the words matter, work them into the heading or the body.",
+    "severity": "warning",
+    "category": "slop",
+    "file": "http://127.0.0.1:4173/",
+    "line": 0,
+    "snippet": "kicker \"Plan with confidence\" above h2 \"Comfort that fits your home\"",
+    "selector": "section.section.pathways-section > div.shell > div.section-heading > span.eyebrow"
+  },
+  {
+    "antipattern": "kicker-above-heading",
+    "name": "Kicker / eyebrow label above heading",
+    "description": "A tiny tracked uppercase or small-caps label sitting as its own block directly above a heading is banned outright, repeated or not. Generated kickers never earn their place: the heading carries its own weight. Delete the label and let the heading speak; if the words matter, work them into the heading or the body.",
+    "severity": "warning",
+    "category": "slop",
+    "file": "http://127.0.0.1:4173/",
+    "line": 0,
+    "snippet": "kicker \"Where we work\" above h2 \"Rooted in the Capital Region\"",
+    "selector": "div.shell.area-layout > div > span.eyebrow"
+  }
+]

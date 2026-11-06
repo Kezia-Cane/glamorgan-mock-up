@@ -45,6 +45,7 @@ The homepage was rebuilt and recaptured at 1440 × 900, 768 × 1024, and 390 × 
 - The consultation scene now shows a tablet-based HVAC explanation, and the footer uses the supplied sailboat logo enlarged with non-overlapping linework decoration.
 - The consultation background is now a dark Sea Teal gradient rather than pale/white, and the transparent sailboat PNG removes the logo's black background in the header and footer.
 - Direction A scroll reveals and image hover motion are scoped to the selected home direction; Direction B/C and inner pages remain static, with reduced-motion fallbacks verified.
+- Direction A includes a centered-logo intro curtain that unlocks the page and triggers the hero entrance sequence on completion; the curtain and hero motion are skipped for reduced-motion users.
 - No horizontal overflow was observed on any route at the three target widths.
 - No failed image paths or console errors were observed. Active image URLs and fonts serve from local assets.
 - Shared navigation points to local routes; the mobile drawer opens, exposes all page links, traps focus while open, and restores focus to its opener when closed. Its closed links are inert. The footer's Facebook and Instagram destinations match links on the current Glamorgan homepage.

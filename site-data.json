@@ -4,7 +4,7 @@
       "path": "/ac-services/",
       "title": "Air Conditioning Services",
       "intro": "Whether you need AC repair, AC installation, AC maintenance, or air conditioner filter replacement, experienced technicians deliver fast, reliable service you can trust for any property.",
-      "photo": "technician-ac-home.png",
+      "photo": "glamorgan-tech-ac-v2.png",
       "sections": [
         {
           "heading": "Expert Air Conditioning Services",
@@ -40,7 +40,7 @@
       "path": "/heating-services/",
       "title": "Heating Services",
       "intro": "",
-      "photo": "technician-heating.png",
+      "photo": "glamorgan-tech-heating-v2.png",
       "sections": [
         {
           "heading": "HEATING SERVICE",
@@ -108,7 +108,7 @@
       "path": "/indoor-air-quality-services-in-clifton-park/",
       "title": "Indoor Air Quality Services",
       "intro": "",
-      "photo": "technician-air-quality.png",
+      "photo": "glamorgan-iaq-filter-reference.png",
       "sections": [
         {
           "heading": "Clean It Up",
@@ -144,7 +144,7 @@
       "path": "/ductless-services/",
       "title": "Ductless Services – Mini-Split Installation and Repair",
       "intro": "",
-      "photo": "technician-air-quality.png",
+      "photo": "glamorgan-iaq-filter-reference.png",
       "sections": [
         {
           "heading": "DUCTLESS SERVICE",
@@ -216,7 +216,7 @@
       "path": "/plumbing-services/",
       "title": "Plumbing Services",
       "intro": "Reliable, Affordable Plumbing for Every Home Plumbing services are essential for keeping your home safe, functional, and efficient. From a dripping faucet to a major leak or complete system installation, reliable plumbing services ensure your comfort and peace of mind. Whether you’re a homeowner or a small business owner, professional plumbing solutions help you avoid costly water damage, maintain healthy water flow, and keep your property running smoothly.",
-      "photo": "technician-plumbing.png",
+      "photo": "glamorgan-tech-plumbing-v2.png",
       "sections": [
         {
           "heading": "Comprehensive Plumbing Services",
@@ -252,7 +252,7 @@
       "path": "/other-hvac-services-in-clifton-park/",
       "title": "Other HVAC Services",
       "intro": "",
-      "photo": "technician-heating.png",
+      "photo": "glamorgan-tech-heating-v2.png",
       "sections": [
         {
           "heading": "Providing HVAC Services To Saratoga, Albany, Halfmoon, NY, & Beyond",
@@ -300,7 +300,7 @@
       "path": "/hvac-promotions-in-clifton-park/",
       "title": "Promotions & Options",
       "intro": "Explore ways to care for your home comfort systems and plan for service.",
-      "photo": "technician-ac-home.png",
+      "photo": "glamorgan-tech-ac-v2.png",
       "sections": [
         {
           "heading": "Service for Every System",
@@ -320,7 +320,7 @@
       "path": "/hvac-blog/",
       "title": "HVAC Blog",
       "intro": "Practical home comfort and plumbing guidance from Glamorgan Heating & Cooling.",
-      "photo": "technician-air-quality.png",
+      "photo": "glamorgan-iaq-filter-reference.png",
       "sections": [
         {
           "heading": "Furnace Filter Replacement",
@@ -344,7 +344,7 @@
       "path": "/reviews/",
       "title": "Customer Reviews",
       "intro": "Read what local homeowners say about Glamorgan Heating & Cooling.",
-      "photo": "technician-heating.png",
+      "photo": "glamorgan-tech-heating-v2.png",
       "sections": [],
       "reviews": [
         {
@@ -393,7 +393,7 @@
       "path": "/service-areas/",
       "title": "Service Areas",
       "intro": "Serving Mechanicville and communities throughout New York’s Capital Region.",
-      "photo": "technician-ac-home.png",
+      "photo": "glamorgan-tech-ac-v2.png",
       "sections": [
         {
           "heading": "Local Service, Close to Home",
@@ -432,7 +432,7 @@
       "path": "/contact-us/",
       "title": "Contact Glamorgan",
       "intro": "Tell us how we can help with your heating, cooling, indoor air, or plumbing needs.",
-      "photo": "technician-plumbing.png",
+      "photo": "glamorgan-tech-plumbing-v2.png",
       "sections": [
         {
           "heading": "Contact Information",

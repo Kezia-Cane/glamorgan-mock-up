@@ -1,5 +1,13 @@
 # Build and review checklist
 
+## Inner-page photo pass, 2026-11-12
+
+- [x] Replaced the generic Indoor Air Quality and Ductless hero technician with distinct generated photos based on the supplied character reference sheets.
+- [x] Replaced every rendered service-story gradient panel with a relevant technician or equipment photo and added photos to related-service cards.
+- [x] Removed the superseded generic `technician-*` files and their HTML, CSS, JavaScript, and data references.
+- [x] Checked the new photos and page layout in a browser at desktop and mobile sizes; no horizontal overflow was observed.
+- [x] Verified all referenced inner-page image files exist and both edited JavaScript files pass syntax checks.
+
 ## Three-direction review, 2026-11-06
 
 - [x] Direction A's new four-technician hero uses all four supplied identity sheets as references. The earlier studio group photo now appears in a separate team section. Extra wave and sail-seam background graphics are scoped to A, and its three responsive screenshots were refreshed.

@@ -16,6 +16,8 @@ Home, Air Conditioning, Heating, Indoor Air Quality, Ductless, Plumbing, Other S
 
 See `assets/README.md` for the active image and font inventory. Original live-page captures remain in `reference-screenshots/` as historical comparison material. New homepage captures are in `final-screenshots/` at 1440 × 900, 768 × 1024, and 390 × 844 CSS pixels. `PRODUCT.md` and `HOMEPAGE-DIRECTION.md` record the Impeccable context and design direction; `DESIGN.md` records the implemented homepage design system. See `CHECKLIST.md` for verification results.
 
+The inner service pages use reference-based Glamorgan technician photos in their heroes, content sections, and related-service cards. The former empty gradient image panels and generic technician photos were removed.
+
 The homepage header displays an enlarged sailboat crest. The top banner and footer link to Glamorgan's Facebook and Instagram profiles. Header, footer, and contact phone links use click-to-call; displayed business addresses open Glamorgan's Google Maps listing.
 
 ## Current limitations

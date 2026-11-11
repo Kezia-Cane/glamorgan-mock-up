@@ -1,12 +1,12 @@
 # Glamorgan Heating & Cooling static site
 
-This is a 12-page, locally runnable HTML/CSS/vanilla JavaScript site. The homepage was rebuilt in the current pass with Impeccable, using a four-person studio photograph derived from the supplied technician references and a simpler service-led layout. The other eleven page layouts remain from the previous pass. The supplied sailboat logo, official favicon, and brand palette guide the homepage. Headlines use Libre Baskerville; body and controls use DM Sans.
+This is a 12-page, locally runnable HTML/CSS/vanilla JavaScript site. The approved Direction A homepage and all eleven inner pages share Glamorgan's navy, teal, gold, and ivory design system. Headlines use Libre Baskerville; body and controls use DM Sans.
 
-Three selectable homepage redesigns are available at `/direction-a/`, `/direction-b/`, and `/direction-c/`; `/` currently mirrors A. See `DIRECTIONS.md` and `direction-screenshots/` for the client comparison. The other eleven routes remain as they were.
+The homepage is available at `/` and `/direction-a/`; the earlier B and C directions remain at their own routes for comparison. See `DIRECTIONS.md` and `direction-screenshots/` for the original client comparison.
 
 ## Run locally
 
-With Node.js 20 or newer, run `node server.mjs` in this folder, then open `http://127.0.0.1:4173/`. Set the `PORT` environment variable if that port is occupied. No build step is required. The server maps the eleven internal routes to the shared `index.html`; `app.js` renders content from `site-data.json`. The homepage is implemented in `home.js` and `home.css`, scoped apart from the remaining pages.
+With Node.js 20 or newer, run `node server.mjs` in this folder, then open `http://127.0.0.1:4173/`. Set the `PORT` environment variable if that port is occupied. No build step is required. The server maps the eleven internal routes to the shared `index.html`; `app.js` renders content from `site-data.json`. The homepage lives in `home.js`/`home.css`, and inner pages use `inner-pages.js`/`inner-pages.css`.
 
 ## Pages
 

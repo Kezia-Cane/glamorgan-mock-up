@@ -1,5 +1,6 @@
 import {renderHome,renderHomeHeader,renderHomeFooter,setupHome} from './home.js';
 import {renderDirection} from './directions.js';
+import {renderInnerPage} from './inner-pages.js';
 const data=await fetch('/site-data.json').then(r=>r.json());
 const A='/assets/images/';
 const mapsUrl='https://www.google.com/maps/place/Glamorgan+Heating+%26+Cooling/@42.907854,-73.696244,6480m/data=!3m1!1e3!4m6!3m5!1s0x69142c6eef7295b1:0x16397bf6e3ee58f1!8m2!3d42.9078539!4d-73.6962438!16s%2Fg%2F11t772_vtl';
@@ -40,11 +41,11 @@ const path=window.location.pathname.endsWith('/')?window.location.pathname:windo
 const page=data.pages.find(p=>p.path===path);
 const isHome=path==='/'||/^\/direction-[abc]\/$/.test(path);
 const direction=path==='/direction-b/'?'b':path==='/direction-c/'?'c':'a';
-const content=isHome?renderDirection(direction,data,services,icon,esc):!page?`<main id="main" class="shell not-found"><h1>Page not found</h1><a href="/">Return home</a></main>`:page.contact?contactPage(page):page.areas?areasPage(page):page.reviews?reviewsPage(page):page.path===routes.blog?blogPage(page):page.path===routes.promotions?optionsPage(page):servicePage(page);
-document.querySelector('#app').innerHTML=isHome?`<div class="gh-page direction-${direction}">${renderHomeHeader()}${content}${renderHomeFooter()}</div>`:header()+content+footer();
+const content=isHome?renderDirection(direction,data,services,icon,esc):!page?`<main id="main" class="shell not-found"><h1>Page not found</h1><a href="/">Return home</a></main>`:renderInnerPage(page);
+document.querySelector('#app').innerHTML=`<div class="gh-page ${isHome?'direction-'+direction:'inner-page'}">${renderHomeHeader()}${content}${renderHomeFooter()}</div>`;
 if(isHome&&direction==='a'){const pageRoot=document.querySelector('.gh-page.direction-a');const curtain=document.createElement('div');curtain.className='intro-curtain';curtain.setAttribute('aria-hidden','true');curtain.innerHTML='<div class="intro-curtain-mark"><img src="/assets/images/glamorgan-sailboat-logo-transparent.png" alt=""></div>';pageRoot.classList.add('intro-pending');document.body.classList.add('intro-lock');document.body.append(curtain);const finish=()=>{curtain.classList.add('is-done');pageRoot.classList.remove('intro-pending');pageRoot.classList.add('intro-complete');document.body.classList.remove('intro-lock');window.setTimeout(()=>curtain.remove(),1100)};if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)finish();else window.setTimeout(finish,1500)}
 document.title=isHome?'Glamorgan Heating & Cooling | HVAC, Plumbing & 24/7 Service':(page?.title||'Home')+' | Glamorgan Heating & Cooling';
-if(isHome)document.querySelectorAll('.gh-footer-logo img,.gh-logo img').forEach(img=>{img.src='/assets/images/glamorgan-sailboat-logo-transparent.png'});
+document.querySelectorAll('.gh-footer-logo img,.gh-logo img').forEach(img=>{img.src='/assets/images/glamorgan-sailboat-logo-transparent.png'});
 const menu=document.querySelector('.mobile-menu'),scrim=document.querySelector('.drawer-scrim');
 menu.inert=true;
 let menuOpener;
